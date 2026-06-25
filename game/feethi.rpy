@@ -4,8 +4,8 @@ label feethi:
     g 4 "Sekarang kamu berada di Tantangan Ketiga"
     voice "8.wav"
     g 4 "Tapi sebelum kamu bisa masuk ke stage ini, kamu harus menyelesaikan permainan terlebih dahulu"
-    call game_3
-    call ruang_penilaian
+    call game_3 from _call_game_3
+    call ruang_penilaian from _call_ruang_penilaian
     return
 
 label ruang_penilaian:
@@ -18,7 +18,7 @@ label ruang_penilaian:
     g 4 "Jawablah pertanyaan di setiap sudut ruangan ini, dan biarkan timbangan mengungkapkan pilihan hatimu."
     voice "suara.wav"
     "Dengan napas dalam, kamu melangkah lebih jauh ke dalam ruangan, bersiap menghadapi pertanyaan yang akan menguji hatimu dan pikiranmu."
-    call konflik_kelompok
+    call konflik_kelompok from _call_konflik_kelompok
     return
 
 label konflik_kelompok:
@@ -38,7 +38,7 @@ label konflik_kelompok:
             "Kamu fokus mendengarkan setiap anggota, berusaha memastikan semua orang merasa dihargai sebelum mencari solusi."
     voice "suara.wav"
     "Bayangan itu memudar, dan timbangan bergerak sedikit. Pintu lain terbuka, mengundangmu melangkah ke tantangan berikutnya."
-    call memilih_topik
+    call memilih_topik from _call_memilih_topik
     return
 
 label memilih_topik:
@@ -58,7 +58,7 @@ label memilih_topik:
             "Kamu memilih tumpukan buku 'Topik dengan Nilai Emosional', percaya bahwa dampak emosional lebih penting dari sekadar angka."
     voice "suara.wav"
     "Kedua tumpukan buku menghilang, dan pintu baru terbuka untuk tantangan berikutnya."
-    call keberhasilan_proyek
+    call keberhasilan_proyek from _call_keberhasilan_proyek
     return
 
 label keberhasilan_proyek:
@@ -78,7 +78,7 @@ label keberhasilan_proyek:
             "Kamu memilih dokumen penghargaan, percaya bahwa keberhasilan sejati adalah ketika semua orang merasa dihargai."
     voice "suara.wav"
     "Dokumen itu berubah menjadi debu, dan pintu ke tantangan berikutnya terbuka."
-    call umpan_balik
+    call umpan_balik from _call_umpan_balik
     return
 
 label umpan_balik:
@@ -98,7 +98,7 @@ label umpan_balik:
             "Kamu memberi pujian atas usaha mereka, percaya bahwa semangat dan motivasi lebih penting daripada kesempurnaan."
     voice "suara.wav"
     "Bayangan itu menghilang, dan pintu terakhir terbuka."
-    call keputusan_penting
+    call keputusan_penting from _call_keputusan_penting
     return
 
 label keputusan_penting:

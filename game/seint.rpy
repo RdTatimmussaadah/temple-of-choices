@@ -4,8 +4,8 @@ label seint:
     g 3 "Sekarang kamu berada di Tantangan Kedua"
     voice "21.wav"
     g "Sekarang kamu harus menyelesaikan permainan terlebih dahulu sebelum melanjutkan"
-    call game_2
-    call lorong_ukiran
+    call game_2 from _call_game_2
+    call lorong_ukiran from _call_lorong_ukiran
     return
 
 label lorong_ukiran:
@@ -29,7 +29,7 @@ label lorong_ukiran:
             "Kamu melangkah mundur dan mencoba memahami gambaran besar dari ukiran itu, berharap menemukan maknanya secara intuitif."
     voice "suara.wav"
     "Setelah beberapa saat, kamu mendengar suara pintu di ujung lorong terbuka perlahan."
-    call jejak_lantai
+    call jejak_lantai from _call_jejak_lantai
     return
 
 label jejak_lantai:
@@ -51,7 +51,7 @@ label jejak_lantai:
             "Kamu mempercayai firasatmu dan memilih jalan kosong, berharap ini adalah pilihan yang benar."
     voice "suara.wav"
     "Setelah memilih jalur, kamu melangkah hati-hati ke depan. Jalan yang kamu pilih membawa kamu ke ruangan berikutnya."
-    call ritual_cahaya
+    call ritual_cahaya from _call_ritual_cahaya
     return
 
 label ritual_cahaya:
@@ -73,7 +73,7 @@ label ritual_cahaya:
             "Kamu merenungkan arti pola cahaya tersebut, mencoba mengaitkannya dengan cerita besar tentang kuil ini."
     voice "suara.wav"
     "Cahaya dari kristal bersinar lebih terang, dan sebuah pintu tersembunyi terbuka dengan suara gemuruh."
-    call tumpukan_batu
+    call tumpukan_batu from _call_tumpukan_batu
     return
 
 label tumpukan_batu:
@@ -95,7 +95,7 @@ label tumpukan_batu:
             "Kamu mencoba memahami simbol-simbol di batu, berharap menemukan kaitannya dengan cerita kuil."
     voice "suara.wav"
     "Setelah kamu menyelesaikan teka-teki, sebuah jalan tersembunyi terbuka, membawa kamu ke tantangan terakhir."
-    call puzzle_game
+    call puzzle_game from _call_puzzle_game
     return
 
 label puzzle_game:

@@ -99,25 +99,25 @@ label awal:
     voice "6.wav"
     g "Silahkan Untuk Melanjutkan Ke Tantangan Pertama"
     #stage 1
-    call eksin
+    call eksin from _call_eksin
     if E > I:
         $ user_queue.append("E")
     else:
         $ user_queue.append("I")
     #stage 2
-    call seint
+    call seint from _call_seint
     if S > N:
         $ user_queue.append("S")
     else:
         $ user_queue.append("N")
     #stage 3
-    call feethi
+    call feethi from _call_feethi
     if F > T :
         $ user_queue.append("F")
     else :
         $ user_queue.append("T")
     #stage 4
-    call juper
+    call juper from _call_juper
     if J > P:
         $ user_queue.append("J")
     else:
@@ -127,37 +127,37 @@ label awal:
     $ hasil_mbti, path = traverse_mbti()
 
     if hasil_mbti == "ESFJ":
-        call esfj
+        call esfj from _call_esfj
     elif hasil_mbti == "ESFP":
-        call esfp
+        call esfp from _call_esfp
     elif hasil_mbti == "ESTJ":
-        call estj
+        call estj from _call_estj
     elif hasil_mbti == "ESTP":
-        call estp
+        call estp from _call_estp
     elif hasil_mbti == "ENFJ":
-        call enfj
+        call enfj from _call_enfj
     elif hasil_mbti == "ENFP":
-        call enfp
+        call enfp from _call_enfp
     elif hasil_mbti == "ENTJ":
-        call entj
+        call entj from _call_entj
     elif hasil_mbti == "ENTP":
-        call entp
+        call entp from _call_entp
     elif hasil_mbti == "ISFJ":
-        call isfj
+        call isfj from _call_isfj
     elif hasil_mbti == "ISFP":
-        call isfp
+        call isfp from _call_isfp
     elif hasil_mbti == "ISTJ":
-        call istj
+        call istj from _call_istj
     elif hasil_mbti == "ISTP":
-        call istp
+        call istp from _call_istp
     elif hasil_mbti == "INFJ":
-        call infj
+        call infj from _call_infj
     elif hasil_mbti == "INFP":
-        call infp
+        call infp from _call_infp
     elif hasil_mbti == "INTJ":
-        call intj
+        call intj from _call_intj
     elif hasil_mbti == "INTP":
-        call intp
+        call intp from _call_intp
     
     voice "suara.wav"
     "Selamat telah mendapatkan karakter yang mencerminkan kepribadianmu"

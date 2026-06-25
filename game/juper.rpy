@@ -6,8 +6,8 @@ label juper:
     g satu "Sekarang kamu berada di Tantangan Terakhir"
     voice "8.wav"
     g "Tapi sebelum anda bisa masuk ke stage ini, kamu harus menyelesaikan permainan terlebih dahulu"
-    call game_4
-    call tugas_harian
+    call game_4 from _call_game_4
+    call tugas_harian from _call_tugas_harian
     return
 
 label tugas_harian:
@@ -33,7 +33,7 @@ label tugas_harian:
             "Kamu memutuskan untuk tidak terlalu terikat dengan daftar, melainkan mengikuti keadaan dan kebutuhan saat itu."
     voice "suara.wav"
     "Bayangan itu memudar, dan suara kuil mengarahkanmu ke tantangan berikutnya."
-    call menyelesaikan_proyek
+    call menyelesaikan_proyek from _call_menyelesaikan_proyek
     return
 
 label menyelesaikan_proyek:
@@ -53,7 +53,7 @@ label menyelesaikan_proyek:
             "Kamu membiarkan proyek berkembang secara alami, menyesuaikan langkah-langkah sesuai kebutuhan."
     voice "suara.wav"
     "Setelah beberapa saat, bayangan itu menghilang, dan pintu menuju tantangan berikutnya terbuka."
-    call menghadapi_perubahan
+    call menghadapi_perubahan from _call_menghadapi_perubahan
     return
 
 label menghadapi_perubahan:
@@ -75,7 +75,7 @@ label menghadapi_perubahan:
             "Kamu dengan cepat beradaptasi dengan perubahan dan mencari cara baru untuk menyelesaikan masalah."
     voice "suara.wav"
     "Bayangan itu perlahan memudar, dan pintu lain di ruangan itu terbuka."
-    call keputusan_kecil
+    call keputusan_kecil from _call_keputusan_kecil
     return
 
 label keputusan_kecil:
@@ -95,7 +95,7 @@ label keputusan_kecil:
             "Kamu membiarkan keputusan kecil ditentukan oleh insting atau kebutuhan langsung."
     voice "suara.wav"
     "Setelah membuat pilihanmu, jalur yang kamu pilih membawa kamu ke tantangan terakhir."
-    call menyusun_acara
+    call menyusun_acara from _call_menyusun_acara
     return
 
 label menyusun_acara:

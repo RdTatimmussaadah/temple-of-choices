@@ -4,7 +4,7 @@ label eksin:
     g dua "Sekarang kamu berada di Tantangan Pertama"
     voice "8.wav"
     g "Tapi sebelum kamu bisa masuk ke stage ini, kamu harus menyelesaikan permainan terlebih dahulu"
-    call game_1
+    call game_1 from _call_game_1
     voice "11.wav"
     g dua "Sekarang kamu bisa melanjutkan perjalananmu !"
     jump ruang_cermin

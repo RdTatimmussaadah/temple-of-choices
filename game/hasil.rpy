@@ -3,7 +3,7 @@
 #     yalign 0.2  # Teks berada di atas (atur ini sesuai kebutuhan)
 
 label esfj:
-    call hasil
+    call hasil from _call_hasil
     show esfj:
         xalign 0.5
         yalign 0.3
@@ -22,7 +22,7 @@ label esfj:
     hide esfj
     return
 label esfp:
-    call hasil
+    call hasil from _call_hasil_1
     show esfp:
         xalign 0.5
         yalign 0.3
@@ -43,7 +43,7 @@ label esfp:
     hide esfp
     return
 label estj:
-    call hasil
+    call hasil from _call_hasil_2
     show estj:
         xalign 0.5
         yalign 0.3
@@ -60,7 +60,7 @@ label estj:
     hide estj
     return
 label estp:
-    call hasil
+    call hasil from _call_hasil_3
     show estp:
         xalign 0.5
         yalign 0.3
@@ -77,7 +77,7 @@ label estp:
     hide estp
     return
 label enfj:
-    call hasil
+    call hasil from _call_hasil_4
     show enfj:
         xalign 0.5
         yalign 0.3
@@ -94,7 +94,7 @@ label enfj:
     hide enfj
     return
 label enfp:
-    call hasil
+    call hasil from _call_hasil_5
     show enfp:
         xalign 0.5
         yalign 0.3
@@ -111,7 +111,7 @@ label enfp:
     hide enfp
     return
 label entj:
-    call hasil
+    call hasil from _call_hasil_6
     show entj:
         xalign 0.5
         yalign 0.3
@@ -128,7 +128,7 @@ label entj:
     hide entj
     return
 label entp:
-    call hasil
+    call hasil from _call_hasil_7
     show entp:
         xalign 0.5
         yalign 0.3
@@ -145,7 +145,7 @@ label entp:
     hide entp
     return
 label isfj:
-    call hasil
+    call hasil from _call_hasil_8
     show isfj:
         xalign 0.5
         yalign 0.3
@@ -162,7 +162,7 @@ label isfj:
     hide isfj
     return
 label isfp:
-    call hasil
+    call hasil from _call_hasil_9
     show isfp:
         xalign 0.5
         yalign 0.3
@@ -179,7 +179,7 @@ label isfp:
     hide isfp
     return
 label istj:
-    call hasil
+    call hasil from _call_hasil_10
     show istj:
         xalign 0.5
         yalign 0.3
@@ -196,7 +196,7 @@ label istj:
     hide istj
     return
 label istp:
-    call hasil
+    call hasil from _call_hasil_11
     show istp:
         xalign 0.5
         yalign 0.3
@@ -213,7 +213,7 @@ label istp:
     hide istp
     return
 label infj:
-    call hasil
+    call hasil from _call_hasil_12
     show infj:
         xalign 0.5
         yalign 0.3
@@ -230,7 +230,7 @@ label infj:
     hide infj
     return
 label infp:
-    call hasil
+    call hasil from _call_hasil_13
     # show text "Kamu Mendapatkan Karakter Owen !" align (0.5, 0.1) size 50 color "#FF0000"
     show infp:
         xalign 0.5
@@ -250,7 +250,7 @@ label infp:
     hide infp
     return
 label intj:
-    call hasil
+    call hasil from _call_hasil_14
     show intj:
         xalign 0.5
         yalign 0.3
@@ -267,7 +267,7 @@ label intj:
     hide intj
     return
 label intp:
-    call hasil
+    call hasil from _call_hasil_15
     show intp:
         xalign 0.5
         yalign 0.3
